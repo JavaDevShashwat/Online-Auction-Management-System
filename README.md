@@ -36,4 +36,4 @@ Role of the users-
   A. Register himself or herself as Buyer.
   B. Search and view Items by category.
   C. Select and view all the buyers and also their Items category wise.
-  D. Selects Items to buy.
+  D. Selects Items to buy..
