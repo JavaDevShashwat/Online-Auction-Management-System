@@ -83,7 +83,7 @@ public class SellerDAOImpl implements SellerDAO{
 					message = "Seller registered successfully...";
 				else
 					message = "Seller could not be registered...";
-					throw new SQLException();
+					throw new SQLException("Seller could not be registered...");
 					
 				
 			}

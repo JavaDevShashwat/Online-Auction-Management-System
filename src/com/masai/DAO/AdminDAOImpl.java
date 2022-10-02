@@ -30,6 +30,7 @@ public class AdminDAOImpl implements AdminDAO{
 		Admin admin = null;
 		
 		try (Connection conn = DBUtility.GetDBConnection()){
+			
 			PreparedStatement ps = conn.prepareStatement("Select * from Admin where Aemail = ?");
 			
 			ps.setString(1, username);
@@ -135,16 +136,13 @@ public class AdminDAOImpl implements AdminDAO{
 			
 			if(sellerList.size() == 0) {
 				System.out.println("No Buyers Registered yet...");
-				throw new SellerException();
+				throw new SellerException("No Buyers Registered yet...");
 			}
 		}
 		catch(SQLException se) {
 			System.out.println(se.getMessage());
 			throw new SellerException();
 		}
-		
-		
-		
 		
 		return sellerList;
 	}

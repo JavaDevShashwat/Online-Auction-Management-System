@@ -266,6 +266,7 @@ public class BuyerDAOImpl implements BuyerDAO{
 			
 			if(x>0) {
 				System.out.println("Product selected successfully....");
+				message = "Product selected successfully....";
 			}
 			
 				PreparedStatement ps4 = conn.prepareStatement("insert into highestBid values(?, ?, ?)");

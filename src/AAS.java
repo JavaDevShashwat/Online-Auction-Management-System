@@ -72,7 +72,7 @@ public class AAS {
 						
 						System.out.println("\nPlease select an option to continue.");
 						
-						System.out.println("\n1. View Registered Buyer List \n2. View Daily Dispute report Seller List \n3. View Daily Dispute report \n4. View Daily Selling report \n5. Solve Daily Dispute report.");
+						System.out.println("\n1. View Registered Buyer List \n2. View Registered Seller List \n3. View Daily Dispute report \n4. View Daily Selling report \n5. Solve Daily Dispute report.");
 						
 						int adminChoice = sc.nextInt();
 						
@@ -296,7 +296,7 @@ public class AAS {
 							
 							HighestBid bid = SelectProducttoBuy.main(null);
 							
-							System.out.println("Do you want to bid more?? Enter true/ flase...");
+							System.out.println("Do you want to bid more?? Enter true/ false...");
 							bidmore = sc.nextBoolean();
 							
 							
@@ -321,7 +321,12 @@ public class AAS {
 							buyer.WonTheBid(bId, Pid, quantity, bid);
 						}
 						
+						System.out.println("Do you want to complete another task? Enter true/false...");
+						
+						btask = sc.nextBoolean();
+						
 						break;
+						
 					default:
 						
 						System.out.println("Do you want to complete another task? Enter true/false...");
@@ -359,6 +364,10 @@ public class AAS {
 			}
 			System.out.println("Do you want to Login/ register again?? Enter true/false...");
 			role = sc.nextBoolean();
+			
+			if(!role) {
+				System.out.println("Thank you for using this Software...");
+			}
 		}
 		
 	}
