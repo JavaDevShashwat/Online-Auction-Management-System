@@ -1,4 +1,4 @@
-# -moaning-distribution-2092
+# Online Auction Management System
 
 Hi, this Shashwat.
 This is a console based Automated Auction Sytem. Which was an individual project.
